@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import punkLogo from "../assets/header/cryptopunk-logo.png";
 import searchIcon from "../assets/header/search.png";
+import themeSwitchIcon from "../assets/header/theme-switch.png";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
 
       <div className="searchBar">
         <div className="searchIconContainer">
-          <img src={searchIcon}></img>
+          <img src={searchIcon} alt=""></img>
         </div>
         <input
           className="searchInput"
@@ -25,6 +26,14 @@ const Header = () => {
         <p>Marketplace</p>
         <p>Create</p>
       </div>
+
+      <div className="headerActions">
+        <div className="themeSwitchContainer">
+          <img src={themeSwitchIcon} alt=""></img>
+        </div>
+      </div>
+
+      <div className="loginButton">GET IN</div>
     </div>
   );
 };
