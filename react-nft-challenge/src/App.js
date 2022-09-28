@@ -1,7 +1,5 @@
 import "./App.css";
-import CollectionCard from "./components/CollectionCard";
 import Header from "./components/Header";
-import p1 from "./punks/1.jpg";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import PunkList from "./components/PunkList";
@@ -24,12 +22,6 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <CollectionCard
-        id={0}
-        name={"Bandana Punk"}
-        traits={[{ value: 7 }]}
-        image={p1}
-      />
       <PunkList punkListData={punkListData} />
     </div>
   );
