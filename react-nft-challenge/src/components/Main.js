@@ -8,14 +8,6 @@ const Main = ({ selectedPunk, punkListData }) => {
   const [activePunk, setActivePunk] = useState(punkListData[0]);
 
   useEffect(() => {
-    console.log("Selected punk: ", selectedPunk);
-    console.log(
-      "Punk Data: ",
-      (punkListData ?? []).find(
-        (punk) => punk.token_id === selectedPunk?.toString()
-      )
-    );
-    // console.log("Punk Data: ", punkListData[selectedPunk]);
     setActivePunk(
       (punkListData ?? []).find(
         (punk) => punk.token_id === selectedPunk?.toString()

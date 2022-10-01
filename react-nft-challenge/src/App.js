@@ -15,7 +15,6 @@ function App() {
       const openseaData = await axios.get(
         "https://testnets-api.opensea.io/assets?asset_contract_address=0x4AC148f98839F83aA3C85C79B7963c4943B34629&order_direction=asc"
       );
-      console.log(openseaData.data.assets);
       setPunkListData(openseaData.data.assets);
     };
 
