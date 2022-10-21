@@ -21,11 +21,7 @@ const Main = ({ selectedPunk, punkListData }) => {
       <div className="mainContent">
         <div className="punkHighlight">
           <div className="punkContainer">
-            <img
-              className="selectedPunk"
-              src={activePunk.image_original_url}
-              alt=""
-            />
+            <img className="selectedPunk" src={activePunk.image_url} alt="" />
           </div>
         </div>
 
